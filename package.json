@@ -1,0 +1,11 @@
+{
+  "name": "arduino-midi-buttons",
+  "version": "1.0.0",
+  "main": "serve.js",
+  "scripts": {"start": "node ./serve.js"},
+  "license": "MIT",
+  "dependencies": {
+    "easymidi": "^1.0.3",
+    "serialport": "^8.0.5"
+  }
+}

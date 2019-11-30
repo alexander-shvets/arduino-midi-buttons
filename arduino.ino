@@ -17,14 +17,19 @@ void setup() {
 int prevStates[BUTTONS_COUNT];
 
 void loop() {
+  int multiTouch = 0;
   for(int i=0; i < BUTTONS_COUNT; i++){
     int state = digitalRead(BUTTON_PINS[i]);
     if( prevStates[i] != state ){
       if( state == HIGH ){
-        Serial.print( i );
-        //Serial.flush();
-      } else {
-         // Не подаём напряжение
+        for(int j=0; j < BUTTONS_COUNT; j++){
+          if( prevStates[j] == HIGH && j != i ) multiTouch++;
+        }
+        if( multiTouch ){
+          Serial.print( multiTouch + BUTTONS_COUNT -1 );
+        }else{
+          Serial.print( i );
+        }
       }
       digitalWrite(LED_BUILTIN, state);
       prevStates[i] = state;

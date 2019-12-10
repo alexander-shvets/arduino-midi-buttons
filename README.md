@@ -6,7 +6,7 @@ USB-Serial to MIDI interface.
 
 0. Download and install [Node.js](https://nodejs.org/)
 
-1. Open Terminal (Command Line) and type:
+1. Open Command Line and type:
 
 ```
 git clone git@github.com:alexander-shvets/arduino-midi-buttons.git
@@ -15,7 +15,8 @@ npm install
 ```
 
 ## Run
-
+1. Open MadMapper
+2. On Command Line type:
 ```
 npm start
 ```

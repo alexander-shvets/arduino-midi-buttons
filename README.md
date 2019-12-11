@@ -1,6 +1,4 @@
-# arduino-midi-buttons
-
-USB-Serial to MIDI interface.
+Serial to MIDI bridge.
 
 ## Install
 

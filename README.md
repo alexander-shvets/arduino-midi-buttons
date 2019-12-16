@@ -1,6 +1,6 @@
 Serial to MIDI bridge.
 
-## Install
+## Installation
 
 0. Download and install [Node.js](https://nodejs.org/)
 
@@ -12,7 +12,8 @@ cd arduino-midi-buttons
 npm install 
 ```
 
-## Run
+## Run Script
+#### (to connect Arduino device with MIDI input software)
 
 1. Open MadMapper
 2. On Command Line type:

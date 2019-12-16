@@ -1,6 +1,7 @@
 const SerialPort = require('serialport')
-const {Output}   = require('easymidi')
+const {Output, getOutputs} = require('easymidi')
 
+console.log( getOutputs() )
 const output = new Output('MadMapper In')
 
 main()
@@ -32,6 +33,6 @@ async function getArduinoDevicePath(){
     const [{path}] = ( await SerialPort.list() ).filter(
         ({manufacturer}) => manufacturer && manufacturer.indexOf('Arduino') === 0
     )
-    //console.log( path )
+    console.log( 'Arduino found on "', path, '" port.' )
     return path
 }

@@ -15,7 +15,7 @@ npm install
 ## Run Script
 #### (to connect Arduino device with MIDI input software)
 
-1. Open MadMapper, make sure that it created MIDI input port (see Preferences). 
+1. Open MadMapper, make sure that it created MIDI Input Device (see Preferences). 
 2. On Command Line type:
 
 ```
